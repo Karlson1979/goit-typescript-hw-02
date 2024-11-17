@@ -7,17 +7,9 @@ import ErrorMessage from "./components/ErrorMessage/ErrorMessage";
 import LoadMoreBtn from "./components/LoadMoreBtn/LoadMoreBtn";
 import ImageModal from "./components/ImageModal/ImageModal";
 import { toast } from "react-hot-toast";
+import Image from "./types/imageType";
 
 const UNSPLASH_ACCESS_KEY = "w3RsBwLFw5aaN_KdIOBmOaPMpNDgV0OJkE9oIUEYyCE";
-
-type Image = {
-  id: string;
-  urls: {
-    small: string;
-    full: string;
-  };
-  alt_description: string | null;
-};
 
 const App: React.FC = () => {
   const [images, setImages] = useState<Image[]>([]);
