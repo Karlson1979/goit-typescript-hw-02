@@ -1,4 +1,3 @@
-// src/types/imageType.ts
 type Image = {
   id: string;
   urls: {
