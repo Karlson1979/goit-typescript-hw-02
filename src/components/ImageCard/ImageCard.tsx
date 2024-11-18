@@ -8,7 +8,7 @@ type ImageCardProps = {
 
 const ImageCard: React.FC<ImageCardProps> = ({ image, onClick }) => {
   return (
-    <div className="image-card" onClick={() => onClick(image)}>
+    <div onClick={() => onClick(image)}>
       <img src={image.urls.small} alt={image.alt_description || "Image"} />
     </div>
   );

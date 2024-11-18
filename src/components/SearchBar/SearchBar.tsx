@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { toast, Toaster } from "react-hot-toast";
+import css from "../SearchBar/Search.module.css";
 
 type SearchBarProps = {
   onSubmit: (query: string) => void;
@@ -23,7 +24,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSubmit }) => {
   };
 
   return (
-    <header>
+    <header className={css.headerSearch}>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
